@@ -24,7 +24,7 @@ public interface IFooterView {
      * loadMore中
      * @param footerHeight
      */
-    void onStart(ZRefreshLayout zRefreshLayout, float footerHeight);
+    void onStart(ZRefreshLayout zRefreshLayout, float footerHeight,boolean isPin);
     /**
      * loadMore 结束
      */

@@ -42,7 +42,10 @@ public class LoadFooter implements IFooterView {
     }
 
     @Override
-    public void onStart(ZRefreshLayout zRefreshLayout, float footerHeight) {
+    public void onStart(ZRefreshLayout zRefreshLayout, float footerHeight,boolean isPinFooter) {
+        if(!isPinFooter){
+            loadingView.setTranslationY(footerHeight);
+        }
         loadingView.setVisibility(View.VISIBLE);
         valueAnimator.start();
         AUtils.notityLoadMoreListener(zRefreshLayout);

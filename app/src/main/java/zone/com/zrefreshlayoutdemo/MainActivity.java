@@ -96,7 +96,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(this, CirlcleActivity.class));
                 break;
             case R.id.nestViewActivity:
-                startActivity(new Intent(this, NestViewActivity.class));
+//                startActivity(new Intent(this, NestViewActivity.class));
                 break;
             case R.id.flexibilityListViewActivity:
                 startActivity(new Intent(this, FlexibilityListViewActivity.class));

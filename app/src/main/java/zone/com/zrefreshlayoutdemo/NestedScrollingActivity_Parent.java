@@ -50,7 +50,7 @@ public class NestedScrollingActivity_Parent extends BaseActivity {
 
             @Override
             public int getItemLayoutId(String s, int position) {
-                return R.layout.item_rc_textview;
+                return 0;
             }
         });
 

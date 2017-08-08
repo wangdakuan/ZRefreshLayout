@@ -35,7 +35,10 @@ public class MeterialFooter implements IFooterView {
     }
 
     @Override
-    public void onStart(ZRefreshLayout zRefreshLayout, float footerHeight) {
+    public void onStart(ZRefreshLayout zRefreshLayout, float footerHeight,boolean isPinFooter) {
+        if(!isPinFooter){
+            rootView.setTranslationY(footerHeight);
+        }
         rootView.setVisibility(View.VISIBLE);
         mMeterialCircle.start();
         AUtils.notityLoadMoreListener(zRefreshLayout);

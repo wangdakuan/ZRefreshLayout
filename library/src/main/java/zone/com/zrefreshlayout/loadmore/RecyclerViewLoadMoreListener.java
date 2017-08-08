@@ -58,7 +58,7 @@ public class RecyclerViewLoadMoreListener implements LoadMoreOtherListener {
                 if (!isFirstItemVisible(recyclerView) && zRefreshLayout.isCanLoadMore()
                         && AUtils.isRest(zRefreshLayout) && isLastItemVisible(recyclerView)) {
                     log("RecyclerViewLoadMoreListener---->loadMore");
-                    AUtils.loadMore(zRefreshLayout);// 执行上拉加载数据
+//                    AUtils.loadMore(zRefreshLayout);// 执行上拉加载数据
 
                 }
             }

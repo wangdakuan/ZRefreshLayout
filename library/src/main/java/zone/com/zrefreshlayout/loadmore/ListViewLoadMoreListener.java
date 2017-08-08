@@ -57,7 +57,7 @@ public class ListViewLoadMoreListener implements LoadMoreOtherListener {
                 if (!isFirstItemVisible(view) && zRefreshLayout.isCanLoadMore()
                         && AUtils.isRest(zRefreshLayout) && isLastItemVisible(view)) {
                     log("ListViewLoadMoreListener---->loadMore");
-                    AUtils.loadMore(zRefreshLayout);// 执行上拉加载数据
+//                    AUtils.loadMore(zRefreshLayout);// 执行上拉加载数据
                 }
         }
 

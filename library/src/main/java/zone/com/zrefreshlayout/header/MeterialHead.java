@@ -2,9 +2,7 @@ package zone.com.zrefreshlayout.header;
 
 import android.app.Activity;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.FrameLayout;
-import android.widget.LinearLayout;
 
 import zone.com.zrefreshlayout.AUtils;
 import zone.com.zrefreshlayout.AnimateBack;
@@ -67,7 +65,7 @@ public class MeterialHead implements IHeaderView {
 
     @Override
     public boolean interceptAnimateBack(AnimateBack animateBack, final ZRefreshLayout.IScroll iScroll) {
-        if (zRefreshLayout.isPinContent() && animateBack == AnimateBack.Complete_Back) {
+        if (zRefreshLayout.isPinHeader() && animateBack == AnimateBack.Complete_Back) {
             mMeterialCircle.startScaleDownAnimation(new MeterialCircle.ScaleDownCallback() {
                 @Override
                 public void over() {

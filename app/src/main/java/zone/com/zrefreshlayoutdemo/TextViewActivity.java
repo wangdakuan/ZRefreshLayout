@@ -20,7 +20,7 @@ public class TextViewActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.text);
         refresh = (ZRefreshLayout) findViewById(R.id.refresh);
-        refresh.setPinContent(true);
+        refresh.setPinHeader(true);
 //        refresh.setIHeaderView(new MeterialHead());
 
 

@@ -11,11 +11,13 @@ public class Config {
     IHeaderView headerView;
     IFooterView footerView;
     IResistance resistance;
-    boolean isPinContent;
+    boolean isPinHeader;
+    boolean isPinFooter;
+    boolean isSpringback; //回弹效果，在没有上拉与下拉时是否需要这个效果
     boolean isDebug;
     ZRefreshLayout.PullListener mPullListener;
     ZRefreshLayout.LoadMoreListener mLoadMoreListener;
-    int delay_millis_auto_complete=10000;
+    int delay_millis_auto_complete = 10000;
 
     private Config() {
     }
@@ -36,13 +38,23 @@ public class Config {
         return this;
     }
 
+    public Config setSpringback(boolean springback) {
+        this.isSpringback = springback;
+        return this;
+    }
+
     public Config setResistance(IResistance resistance) {
         this.resistance = resistance;
         return this;
     }
 
-    public Config setPinContent(boolean pinContent) {
-        this.isPinContent = pinContent;
+    public Config setPinHeader(boolean pinContent) {
+        this.isPinHeader = pinContent;
+        return this;
+    }
+
+    public Config setPinFooter(boolean pinFooter) {
+        this.isPinFooter = pinFooter;
         return this;
     }
 
@@ -60,6 +72,7 @@ public class Config {
         this.isDebug = writeLog;
         return this;
     }
+
     public Config setDelayAutoCompleteTime(int delayAutoComplete) {
         this.delay_millis_auto_complete = delayAutoComplete;
         return this;
